@@ -67,7 +67,7 @@ def generate_poster_route():
     
     # Refine the prompt using the provided input
     refined_prompt = refine_prompt(data)
-    print(refine_prompt)
+    print(refined_prompt)
     
     # Generate the image using the refined prompt
     image_url = generate_image(refined_prompt)
@@ -78,4 +78,5 @@ def generate_poster_route():
         return jsonify({'error': 'Failed to generate image'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Ensure app runs on the correct host and port for Render
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
