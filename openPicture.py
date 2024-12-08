@@ -91,10 +91,11 @@ You will be given a simple product description, and your task is to create a cap
 
 # Output Format
 
-- **Bold title** to capture attention.
-- Short paragraph (3-5 sentences) detailing product features and benefits.
+- Title in capital to capture attention.
+- Short paragraph (2-4 sentences) detailing product features and benefits.
 - Features should also include 2-3 bullet points if possible.
-- At the end, include 5-7 **relevant hashtags**.
+- Add new line where required
+- At the end, add two lines and include 5-7 **relevant hashtags**.
 
 # Notes
 
